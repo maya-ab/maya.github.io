@@ -90,9 +90,49 @@ header {
     font-size: 1.5rem;
   }
 }
+
 #description {
-  width: 100%;
   max-width: 1000px;
+  width: 100%;
+  padding: 2rem;
   margin: 2rem auto;
+  background-color: #f9f9f9; 
+    border-radius: 15px; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease;
+  display: none;
+
 }
 
+/* Helping Bees Block */
+.project-block[data-file="helping-bees.html"]:hover {
+  background-color: #f1c233a8; 
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* GDP & CO2 Data Analysis Block */
+.project-block[data-file="data-analysis.html"]:hover {
+  background-color: #f88479a8;
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Quick Yard Help Block */
+.project-block[data-file="quickyardhelp.html"]:hover {
+  background-color: #8cc02ba6;
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.project-block.active[data-file="helping-bees.html"] {
+  background-color: #f1c233a8;
+}
+
+.project-block.active[data-file="data-analysis.html"] {
+  background-color: #f88479a8;
+}
+
+.project-block.active[data-file="quickyardhelp.html"] {
+  background-color: #8cc02ba6;
+}
