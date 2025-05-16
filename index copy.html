@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Hello, I'm Maya! </h1>
+  <p>
+      Hello! I'm Maya Ayaviri, a Computer Science student at the University of British Columbia, Okanagan.
+      I have a diverse skill set in Python, Java, Flutter, React, and Javascript that is demonstrated via the projects I’ve worked on.
+      I’ve gained valuable skills from working on each one of my projects, such as the ability to effectively work in a team, problem solve, and think creatively.
+      Eager to leverage what I've learned through my projects, university, and my work experience, I am excited about exploring employment
+      opportunities where I can contribute to a dynamic team and further my professional development.
+
+  </p>
+</header>
+
+<section id="projects">
+
+  <h2>Projects</h2>
+
+    <div class="project">
+        <button class="project-button">Helping Bees</button>
+        <div class="project-content">
+            <p> Helping bees is an app that aims to connect individuals seeking volunteer opportunities
+                with organizations in need of volunteers. I worked on the app along-side another developer.
+                I focused on developing the back end for the log-in, sign-up, and search pages. This project is still a work in progress.
+            <ul>
+                <li>As a volunteer, you can search through volunteer posts, like posts to view them later, and select fields which you are interested in volunteering in.</li>
+                <li>As an organization, you can add volunteer posts and view your uploaded posts on your profile page.</li>
+                <li>This project was built using Flutter, Firebase, and Google Maps.</li>
+            </ul>
+            </p>
+
+            <div class="image-container">
+                <video width="400vw"  controls>
+                    <source src="assets/helpingbees.mp4" type="video/mp4">
+
+                </video>
+            </div>
+       </div>
+    </div>
+
+    <div class="project">
+        <button class="project-button">GDP and CO2 Emissions Global Analysis</button>
+        <div class="project-content">
+            This project was created as part of a project for my data analytics course.
+            We worked in teams but each had separate specific research topics. Here I'm displaying only my section of the research which
+            focused on CO2 emissions and GDP. My research questions
+                  were:
+
+            <ul>
+
+                  <li>How does the relationship between GDP and CO2 emissions compare for the 15 highest income Countries
+            vs the 15 lowest income countries over recent years? What about during financial crises periods?
+
+                 <li> How does the average CO2 emissions per capita of high GDP countries compare to low GDP countries, and the rest of the world? Has this changed over the years?
+            </ul>
+            All of the analysis was done in python. I  utilized pandas, numpy, seaborn, and matlab libraries to create visualizations from my two datasets.
+            Using these visualizations I answered my research questions (Only a portion of my visualizations are displayed here, the rest can be found on github).
+            Click on an image to get a more up close view.
+            <div class="image-container">
+                <a href="https://github.com/maya-ab/GDPCO2GlobalAnalysis/blob/main/images/notebook2fig2.png?raw=true">
+                    <img src="https://github.com/maya-ab/GDPCO2GlobalAnalysis/blob/main/images/notebook2fig2.png?raw=true" title="source: imgur.com">
+                </a>
+                <a href="https://github.com/maya-ab/GDPCO2GlobalAnalysis/blob/main/images/notebook2fig3.png?raw=true">
+                    <img src="https://github.com/maya-ab/GDPCO2GlobalAnalysis/blob/main/images/notebook2fig3.png?raw=true" title="source: imgur.com">
+                </a>
+                <a href="https://github.com/maya-ab/GDPCO2GlobalAnalysis/blob/main/images/notebook2eda1.png?raw=true">
+                    <img src="https://github.com/maya-ab/GDPCO2GlobalAnalysis/blob/main/images/notebook2eda1.png?raw=true" title="source: imgur.com">
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="project">
+        <button class="project-button">Video Sharing Website</button>
+        <div class="project-content">
+            <p> This video sharing website was made for my capstone course.
+            Me and a team of 4 other computer science students have been working together
+            in developing it. We utilized AWS, Amplify, react, and javascript to implement this website.
+                I mainly worked on the front end of the record video and upload video pages, as well as the backend portion of
+                the edit profile page.
+            You can check it out yourself here: <a href="https://www.cosc499team20.com/" target="_blank">www.cosc499team20.com</a>.
+
+            <ul>
+            <li>Users can log in and record videos via their browsers </li>
+            <li>These videos can then be uploaded, downloaded, or played back</li>
+            <li>Users can also simultaneously upload videos they had pre-recorded if they'd like </li>
+            <li>Uploaded videos get saved to an S3 bucket and can be watched back on the library page</li>
+            <li>Uploaded videos can be sent to other users registered with the website along with a description </li>
+            <li>More features to arrive... </li>
+
+        </ul>
+            <div class="image-container">
+            <video width="740vw"  controls>
+                <source src="assets/vidShare.mp4" type="video/mp4">
+
+            </video>
+            </div>
+        </div>
+    </div>
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Add more projects in the same format -->
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

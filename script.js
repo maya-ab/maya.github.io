@@ -1,16 +1,19 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const projectBlocks = document.querySelectorAll(".project-block");
+  const descriptionContainer = document.getElementById("description");
 
-document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.project-button');
-
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
-            this.classList.toggle('active');
-            const content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        });
+  projectBlocks.forEach(block => {
+    block.addEventListener("click", () => {
+      const fileName = block.getAttribute("data-file");
+      
+      // Fetch the corresponding HTML file
+      fetch(fileName)
+        .then(response => response.text())
+        .then(data => {
+          descriptionContainer.innerHTML = data;
+          descriptionContainer.scrollIntoView({ behavior: "smooth" });
+        })
+        .catch(error => console.error("Error loading file:", error));
     });
+  });
 });
