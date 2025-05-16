@@ -90,8 +90,9 @@ header {
     font-size: 1.5rem;
   }
 }
-
 #description {
-  margin-left: 10rem;
-  margin-right: 10rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem auto;
 }
+
